@@ -1,0 +1,42 @@
+body {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+#gameMessage {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#playAgainButton {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    margin-top: 5vh;
+}
+
+#gameBoard {
+    margin-top: 5vh;
+    width: 500px;
+    height: 500px;
+    border: solid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.cell {
+    font-size: 100px;
+    display: flex;
+    border: solid;
+    justify-content: center;
+    align-items: center;
+}
