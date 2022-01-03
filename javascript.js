@@ -132,6 +132,8 @@ const gameController = (() => {
         }
         if (round > 9) {
             displayController.displayMessage('It\'s a draw!');
+            playAgainButton.disabled = false;
+            playAgainButton.hidden = false;
         }
         else {
             displayController.displayMessage(`Player ${getCurrentPlayer().getSymbol()}'s Turn!`);
